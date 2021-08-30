@@ -1,0 +1,11 @@
+.card {
+  box-shadow: 1px 1px 10px #ebeded;
+  &-sku,
+  &-cod {
+    font-size: 0.8rem;
+  }
+
+  &-sku {
+    color: blue;
+  }
+}

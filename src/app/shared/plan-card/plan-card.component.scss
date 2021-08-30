@@ -1,0 +1,24 @@
+.plan-card {
+  border-radius: 6px;
+  background-color: #4d96fb;
+  color: white;
+  box-shadow: 1px 1px 10px #ebeded;
+  &-sku,
+  &-cod {
+    font-size: 0.8rem;
+  }
+
+  &-sku {
+    color: white;
+  }
+
+  &-franquia {
+    font-size: 3.4rem;
+    margin: 40px 0;
+  }
+
+  &-valor {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+}

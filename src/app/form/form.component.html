@@ -1,0 +1,41 @@
+<div class="row">
+  <div class="col-12 col-md-6 offset-md-3">
+    <h1>Preencha os campos abaixo:</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12 col-md-6 offset-md-3">
+    <span class="plan"><strong>Plataforma: </strong>P {{ platID }}</span>
+    <span class="plataform"><strong>Plano: </strong>{{ sku }}</span>
+    <form (ngSubmit)="onSubmit()" [formGroup]="formData">
+      <div class="mb-3">
+        <label for="nome" class="form-label">Nome</label>
+        <input type="text" class="form-control" formControlName="nome" />
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email address</label>
+        <input type="email" class="form-control" formControlName="email" />
+      </div>
+      <div class="mb-3">
+        <label for="nome" class="form-label">Nascimento:</label>
+        <input type="text" class="form-control" formControlName="nascimento" />
+      </div>
+      <div class="mb-3">
+        <label for="cpf" class="form-label">CPF:</label>
+        <input type="text" class="form-control" formControlName="cpf" />
+      </div>
+      <div class="mb-3">
+        <label for="nome" class="form-label">Telefone:</label>
+        <input type="text" class="form-control" formControlName="telefone" />
+      </div>
+
+      <button
+        type="submit"
+        [disabled]="!formData.valid"
+        class="btn btn-primary"
+      >
+        Enviar
+      </button>
+    </form>
+  </div>
+</div>

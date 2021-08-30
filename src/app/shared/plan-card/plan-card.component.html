@@ -1,0 +1,10 @@
+<div class="plan-card text-center">
+  <div class="card-body">
+    <span class="plan-card-sku">Cód: {{ attributes.sku }}</span>
+    <h5 class="plan-card-franquia">{{ attributes.franquia }}</h5>
+    <p class="plan-card-valor">R$ {{ attributes.valor }}</p>
+    <a href="#" [routerLink]="['form', attributes.sku]" class="btn btn-primary"
+      >Selecionar</a
+    >
+  </div>
+</div>

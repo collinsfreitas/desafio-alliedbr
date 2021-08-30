@@ -1,0 +1,17 @@
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">{{ attributes.nome }}</h5>
+    <span class="card-cod">Cód: </span>
+    <span class="card-sku"> {{ attributes.sku }}</span>
+    <p class="card-description">
+      {{ attributes.descricao }}
+    </p>
+    <a
+      (click)="setPlataform(attributes.sku, attributes.nome)"
+      href="#"
+      [routerLink]="['/plataformas/planos/', attributes.sku]"
+      class="btn btn-primary"
+      >Selecionar</a
+    >
+  </div>
+</div>
